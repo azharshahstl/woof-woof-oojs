@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     dogBar.addEventListener('click', (e) => {
+      debugger
       const clickedDogId = parseInt(e.target.dataset.id)
       const foundDog = dogData.find(/*function*/(dog) => dog.id === clickedDogId)
       const isGoodDogString = foundDog.isGoodDog ? 'Good Dog!' : 'Bad Dog!'
